@@ -3,68 +3,64 @@
 ### Source Code
 
 ```py
-nama = "Abigail"
+numbers = input("Masukkan angka : ")
 
-for item in nama:
-    print(item, end=' ')
-print("\n")
-    
-# perulangan list
-print ("\n==========================")
-num = [1,2,3]
-for i in num:
-    print(i)
-print("\n")   
-
-# perulangan in range
-print ("\n=========================")
-for i in range(3):  # list selalu dimulai dari nol
-    print(i) 
+number_mapping = {
+    "1":"Satu",
+    "2":"Dua",
+    "3":"Tiga",
+    "4":"Empat",
+    "5":"Lima",
+    "6":"Enam",
+    "7":"Tujuh",
+    "8":"Delapan",
+    "9":"Sembilan",
+}
+output = ""
+for n in numbers:
+    terbilang = number_mapping.get(n, "Tidak Terdefinisi")
+    output = output + terbilang + " "
+print(output)
 ```
 ### VS Code & Output
-![A1](https://user-images.githubusercontent.com/93004722/140848349-cc7a5529-a7cc-4032-8ba3-7f451c16cbef.PNG)
+![Z1](https://user-images.githubusercontent.com/93004722/141076447-73de71b4-169d-4ee6-9f56-9d9e58985f7b.PNG)
 
 ## 2. Emoji Converter
 ### Source Code
 
 ```py
-kata = ['sorry', 'bang', 'jago']
-# mengambil urutan pertama dari list
-print(kata[0])
+kalimat = input(">>>  : ")
 
-# mengambil urutan terakhir dari list
-print(kata[-1])
+emoji_mapping = {
+    ":-|": "😶",
+    ":A": "😡",
+    "XD": "🤣"
 
-# mengambil berdasarkan range
-print(kata[0:3])
+}
+output = ""
+words = kalimat.split(" ")
+for w in words:
+    output = output+emoji_mapping.get(w , w)+ " "
+print(output)
 ```
 ### VS Code & Output
-![A2](https://user-images.githubusercontent.com/93004722/140849207-068e1131-d987-416b-99ad-097eec2c570a.PNG)
+![Z2](https://user-images.githubusercontent.com/93004722/141080489-e4fa8eac-4b7d-4da3-8313-df642d4b8b59.PNG)
 
 ## 3. Fungsi
 ### Source Code
 
 ```py
-nomor = [7, 4, 2 ,1]
-print(nomor)
+def name():
+    print("Abigail Perkasa")
 
-nomor.append(69) #memasukkan objek pada list
-print(nomor)
+print("Hallo")
+name() 
+print("Orang")    
 
-nomor.insert(0, 3) #memasukkan objek kedalam list pada index tertentu
-print(nomor)
-
-nomor.pop(1) #menghapus objek list pada index tertentu
-print(nomor)
-
-nomor.remove(69) #menghapus suatu objek didalam array
-print(nomor)
-
-nomor.sort() #mengurutkan item dalam list
-print(nomor)
+# output sesuai urutan
 ```
 ### VS Code & Output
-![A3](https://user-images.githubusercontent.com/93004722/140849906-fc642467-7e7e-41c2-8fe4-76e063b28db3.PNG)
+![Z3](https://user-images.githubusercontent.com/93004722/141086922-743d6fa4-a7b2-44d4-99d4-785937075e7f.PNG)
 
 ## 4. Parameter Fungsi
 ### Source Code
