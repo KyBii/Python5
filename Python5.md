@@ -50,12 +50,13 @@ print(output)
 ### Source Code
 
 ```py
-def name():
-    print("Abigail Perkasa")
+def Player(nama , age):
+    print(f"Welcome {nama} - {age}")
 
-print("Hallo")
-name() 
-print("Orang")    
+
+
+Player("Abigail",19)
+Player("Bocil",19)
 
 # output sesuai urutan
 ```
@@ -76,41 +77,35 @@ for nomor in nomor2:
 print(nomor3)
 ```
 ### VS Code & Output
-![A4](https://user-images.githubusercontent.com/93004722/140851493-31cf1c3f-e89b-4356-8742-0555e56d4d33.PNG)
+![Z4](https://user-images.githubusercontent.com/93004722/141120040-f3604d0f-83e2-4bf8-bf90-b5bc61fa6af1.PNG)
 
 ## 5. Keyword Argument
 ### Source Code
 
 ```py
-nomor_nomor = [5,4,7,3,1]
+def hello(nama, age):
+    print(f"Status {nama} - {age}")
+    print("Welcome to new game")
 
-nomormaks = max(nomor_nomor)
-print(nomormaks)
 
-#2
-nomor_nomor.sort()
-nomormaks = nomor_nomor[-1]
-print(nomormaks)
+print("Link Start")
+hello(age = 19, nama = "Abigail") #digunakan pada saat tertentu agar mudah dipahami
+print("Game Over")
 
-#3
-nomormaks = nomor_nomor[0]
-for nomor in nomor_nomor:
-    if nomor > nomormaks:
-        nomormaks = nomor
-print(nomormaks)
+# output sesuai urutan
 ```
 ### VS Code & Output
-![A5](https://user-images.githubusercontent.com/93004722/140852227-71727321-85ff-4220-a84e-9e97fa0d565c.PNG)
+![Z5](https://user-images.githubusercontent.com/93004722/141122314-58c380da-7839-4941-a2a7-00edd4523648.PNG)
 
 ## 6. Return Value
 ### Source Code
 
 ```py
-# Perbedaan dengan list, isi tuple tidak bisa diubah
+def pembagian(a, b):
+  return  a / b
 
-angka = (6, 3, 7, 4, 5)
-print(angka[2])
+hasil = pembagian (70, 7)
+print(hasil)
 ```
 ### VS Code & Output
-![A6](https://user-images.githubusercontent.com/93004722/140853358-2e1289bc-e077-4d21-a96e-100aa17af743.PNG)
-
+![Z6](https://user-images.githubusercontent.com/93004722/141122776-185685d8-e73e-48ac-ad87-4ec065c63dd5.PNG)
